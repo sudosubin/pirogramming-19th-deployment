@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY requirements.txt ./
 
-RUN pip install -r requirements.txt --no-cache-dir --disable-pip-version-check
+RUN pip install -r requirements.txt --no-cache-dir --disable-pip-version-check --no-build-isolation
 
 ARG DJANGO_SETTINGS_MODULE
 ENV DJANGO_SETTINGS_MODULE ${DJANGO_SETTINGS_MODULE:-server.settings}
