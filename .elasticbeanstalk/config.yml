@@ -1,0 +1,9 @@
+branch-defaults:
+  main:
+    environment: main-pirogramming-19th
+
+global:
+  application_name: pirogramming-19th
+  default_platform: Docker running on 64bit Amazon Linux 2
+  default_region: ap-northeast-2
+  sc: git
